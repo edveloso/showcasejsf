@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+
+	<p:pieChart id="sample" value="#{chartBean.pieModel}"
+		legendPosition="w" title="Sample Pie Chart"
+		style="width:400px;height:300px" />
+
+	<p:pieChart id="custom" value="#{chartBean.pieModel}"
+		legendPosition="e" fill="false" showDataLabels="true"
+		title="Custom Options" style="width:400px;height:300px"
+		sliceMargin="5" diameter="150" />
+
+	<br />
+
+	<p:accordionPanel>
+		<p:tab title="Titulo 1">
+			<h:outputText value="ola" />
+
+		</p:tab>
+		<p:tab title="Titulo 2">
+			<h:outputText value="ola 2" />
+
+		</p:tab>
+
+
+	</p:accordionPanel>
+
+</h:body>
+</html>
